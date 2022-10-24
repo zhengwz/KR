@@ -271,7 +271,7 @@ async function getTreasureBoxAwardTask() {
     console.log(`正在进行任务：${treasureBox.taskMainTitle}`);
     await ddnc_getTreasureBoxAward(1);
     if ($.treasureResult.code == '0') {
-      await beanTaskList();
+      //await beanTaskList();
       await $.wait(1000);
       await ddnc_getTreasureBoxAward(2);
       if ($.treasureRwardResult.code == '0') {
